@@ -1,0 +1,20 @@
+#spring.application.name=ecommerce
+spring:
+  application:
+    name: ecommerce
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce-db
+    username: aamirnawaz
+    password: aamirnawaz
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: false
+
+server:
+  port: 9001
+
